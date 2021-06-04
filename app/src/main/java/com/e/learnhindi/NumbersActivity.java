@@ -35,6 +35,8 @@ public class NumbersActivity extends AppCompatActivity {
         String st = intent.getExtras().getString("title1");
         this.setTitle(st);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         /**
          * Preoaring list to show in NumbersActivity

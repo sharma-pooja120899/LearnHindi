@@ -26,6 +26,8 @@ public class ColorsActivity extends AppCompatActivity {
         String st=intent.getExtras().getString("title4");
         this.setTitle(st);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         audioManager=(AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         list=new ArrayList<>();

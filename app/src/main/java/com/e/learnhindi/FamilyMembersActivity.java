@@ -26,6 +26,8 @@ public class FamilyMembersActivity extends AppCompatActivity {
         String st=intent.getExtras().getString("title2");
         this.setTitle(st);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         audioManager=(AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
        list =new ArrayList<>();

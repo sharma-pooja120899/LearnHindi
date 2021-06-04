@@ -26,6 +26,8 @@ public class PhrasesActivity extends AppCompatActivity {
         String st=intent.getExtras().getString("title3");
         this.setTitle(st);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         audioManager=(AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         list=new ArrayList<>();
